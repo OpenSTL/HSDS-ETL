@@ -1,0 +1,16 @@
+{
+  "name": "openstl-airtable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r dotenv/config airtable.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "airtable": "^0.10.0",
+    "dotenv": "^8.2.0"
+  }
+}
