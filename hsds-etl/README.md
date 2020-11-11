@@ -1,6 +1,3 @@
-# HSDS ETL pipeline
-Please checkout the wiki for more details!
-
 # hsds-etl
 
 ## Project setup
@@ -22,3 +19,6 @@ npm run build
 ```
 npm run lint
 ```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
