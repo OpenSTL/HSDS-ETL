@@ -1,0 +1,16 @@
+{
+  "name": "transformer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "install": "^0.13.0",
+    "npm": "^6.14.11",
+    "vue": "^2.6.12"
+  }
+}
