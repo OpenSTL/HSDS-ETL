@@ -24,7 +24,6 @@ function getCSVpromise(filename) {
             }
         })
         parser.on("end", () => {
-            debugger;
             output_in_csv_format = []
             columns = output.shift()
             output.forEach((row) => {
@@ -127,6 +126,13 @@ process_csvs = function(mapping, filenames, output_folder) {
                     output_csvs[destination_csv] = {}
                 }
                 output_csvs[destination_csv][destination_column] = csv_data[source_column]
+                //Add foreign key column if present.
+                if ("foreign_key_name" in destination) { 
+                    console.log(destination)
+                    foreign_key_name = destination["foreign_key_name"]
+                    foreign_key_value = destination["foreign_key_value"] //Assume present
+                    output_csvs[destination_csv][foreign_key_name] = csv_data[foreign_key_value]
+                }
             })
             //Mark the file as completed. If all completed, write to files.
             completed[filename] = true
