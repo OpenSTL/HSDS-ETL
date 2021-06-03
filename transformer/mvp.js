@@ -6,9 +6,9 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter
 const path = require("path")
 const readline = require("readline")
 
-csvExample = "/home/paul/Documents/proj/open_source/openstl/hsds-transformer/hsds-transformer/examples/florida_data/locations.csv"
+csvExample = "florida_data/locations.csv"
  
-yamlContents = fs.readFileSync("/home/paul/Documents/proj/open_source/openstl/hsds-transformer/hsds-transformer/examples/florida_data/florida_mapping.yaml")
+yamlContents = fs.readFileSync("florida_data/florida_mapping.yaml")
 yaml_data = yaml.loadAll(yamlContents)
 
 function getCSVpromise(filename) {
@@ -147,7 +147,7 @@ process_csvs = function(mapping, filenames, output_folder) {
     }
 }
 
-source_folder = "/home/paul/Documents/proj/open_source/openstl/hsds-transformer/hsds-transformer/examples/florida_data/"
+source_folder = "florida_data/"
 
 filenames = []
 
